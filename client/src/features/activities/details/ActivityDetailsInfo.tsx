@@ -47,7 +47,7 @@ export default function ActivityDetailsInfo({activity}: Props) {
                 </Grid2>
             </Grid2>
             { mapOpen && (
-                <Box sx={{height: 400, zIndex: 1000, display: 'block'}}>
+                <Box sx={{height: 400, zIndex: 1000, display: 'block', width: 400}}>
                     <MapComponent position={[activity.latitude, activity.longitude]} venue={activity.venue} />
                 </Box>
             )}
